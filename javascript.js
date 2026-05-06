@@ -17,7 +17,7 @@
 
     // Função para formatar telefone (exibe no console e valida)
     function formatWhatsAppMessage(data) {
-        return `Olá Lume Pet! Gostaria de agendar um horário para meu pet ${data.petName}.\n👤 Tutor: ${data.nome}\n📅 Data: ${data.data} às ${data.horario}\n✂️ Serviço: ${data.servico}\n📞 Meu WhatsApp: ${data.whatsapp}\n\n*Agendamento pelo site - Lume Pet* 🐾`;
+        return `Olá Ruck.pet! Gostaria de agendar um horário para meu pet ${data.petName}.\n👤 Tutor: ${data.nome}\n📅 Data: ${data.data} às ${data.horario}\n✂️ Serviço: ${data.servico}\n📞 Meu WhatsApp: ${data.whatsapp}\n\n*Agendamento pelo site - Ruck.pet* 🐾`;
     }
 
     // Processamento do formulário (validação, localStorage e abertura do WhatsApp)
@@ -56,7 +56,8 @@
             timestamp: new Date().toISOString()
         };
 
-        // Armazenar no localStorage (simulação de leads para engajamento futuro)
+        // Armazenar no localStorage 
+
         let agendamentosSalvos = localStorage.getItem('lume_pet_agendamentos');
         if (agendamentosSalvos) {
             let lista = JSON.parse(agendamentosSalvos);
@@ -73,7 +74,7 @@
         // Limpar os campos do formulário para dar sensação de renovação
         bookingForm.reset();
 
-        // Preparar mensagem personalizada para WhatsApp (engajamento)
+        // Preparar mensagem personalizada para WhatsApp 
         const mensagemWhatsApp = formatWhatsAppMessage(agendamento);
         
         // Redirecionar para o WhatsApp após 1.2s (aumenta conversão)
