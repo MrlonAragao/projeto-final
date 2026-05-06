@@ -7,7 +7,7 @@
 
 **Ruck Pet** é uma landing page moderna, minimalista e responsiva para um petshop. O projeto foi desenvolvido com foco em **engajamento** e **agendamentos**, utilizando HTML semântico, CSS Grid, Flexbox e JavaScript para manipulação do DOM e armazenamento local.
 
-🔗 **Demonstração online:** [clique aqui](https://seu-usuario.github.io/Ruck-pet/) *(substitua pelo link do seu GitHub Pages)*
+🔗 **Demonstração online:** [https://mrlonaragao.github.io/projeto-final/]
 
 ---
 ## 📋 Funcionalidades

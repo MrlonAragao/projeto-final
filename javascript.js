@@ -17,7 +17,7 @@
 
     // Função para formatar telefone (exibe no console e valida)
     function formatWhatsAppMessage(data) {
-        return `Olá Ruck.pet! Gostaria de agendar um horário para meu pet ${data.petName}.\n👤 Tutor: ${data.nome}\n📅 Data: ${data.data} às ${data.horario}\n✂️ Serviço: ${data.servico}\n📞 Meu WhatsApp: ${data.whatsapp}\n\n*Agendamento pelo site - Ruck.pet* 🐾`;
+        return `Olá Ruck.pet! Gostaria de agendar um horário para meu pet ${data.petName}.\n👤 Tutor: ${data.nome}\n📅 Data: ${data.data} às ${data.horario}\n✂️ Serviço: ${data.servico}\n📞 Meu WhatsApp: ${data.whatsapp}\n\n*Agendamento pelo site - Ruck.* 🐾`;
     }
 
     // Processamento do formulário (validação, localStorage e abertura do WhatsApp)
