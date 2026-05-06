@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Ruck Pet – Cuidado moderno e minimalista para seu pet. Agende banho, tosa, consulta e muito mais. Ambiente clean, produtos naturais e atendimento de excelência.">
+    <title>Ruck Pet | Estética & Cuidado</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="https://api.whatsapp.com/send/?phone=5547999999999&text=Ol%C3%A1%21+Gostaria+de+agendar+um+hor%C3%A1rio+no+Ruck+Pet+%EF%BF%BD%22&type=phone_number&app_absent=0" 
+   class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+<div class="container">
+    <header>
+        <nav class="navbar">
+            <div class="logo">Ruck.pet</div>
+            <div class="nav-links">
+                <a href="#home">Início</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#agendar">Agendar</a>
+                <a href="#" class="btn-outline" id="openWABtn"><i class="fab fa-whatsapp"></i> Contato</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="hero">
+                <div class="hero-content">
+                    <span class="hero-badge"><i class="fas fa-paw"></i> cuidado que ilumina</span>
+                    <h1>Estética & saúde com alma.</h1>
+                    <p>Banho, tosa, consulta veterinária e day care. Ambiente clean, produtos naturais e agendamento rápido. Seu pet mais feliz em cada detalhe.</p>
+                    <button class="btn-primary" id="heroAgendarBtn"><i class="far fa-calendar-check"></i> Agende agora</button>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3>+1.5k</h3>
+                            <p>pets felizes</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>5★</h3>
+                            <p>avaliação média</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>12min</h3>
+                            <p>resposta média</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <i class="fas fa-dog"></i><i class="fas fa-cat" style="margin-left: -20px;"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos">
+            <div class="services">
+                <h2>Cuidados essenciais</h2>
+                <p>Serviços pensados no bem-estar e na estética moderna do seu amigo.</p>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon"><i class="fas fa-bath"></i></div>
+                        <h3>Banho & Tosa</h3>
+                        <p>Produtos hipoalergênicos e tosa especializada para cada raça.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon"><i class="fas fa-stethoscope"></i></div>
+                        <h3>Consulta Veterinária</h3>
+                        <p>Prevenção, vacinas e check-up com profissionais experientes.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon"><i class="fas fa-spa"></i></div>
+                        <h3>Day Care</h3>
+                        <p>Ambiente monitorado, socialização e atividades lúdicas.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon"><i class="fas fa-cut"></i></div>
+                        <h3>Estética Premium</h3>
+                        <p>Hidratação, escovação, cortes criativos e finalização.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <div class="features">
+            <div class="features-flex">
+                <div class="feature-item">
+                    <i class="fas fa-calendar-week"></i>
+                    <h3>Agendamento Online</h3>
+                    <p style="font-size:0.85rem">Escolha horário em 30 segundos</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Lembretes automáticos</h3>
+                    <p style="font-size:0.85rem">Via WhatsApp e e-mail</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Produtos sustentáveis</h3>
+                    <p style="font-size:0.85rem">Cruelty-free e biodegradáveis</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>1ª visita 10% off</h3>
+                    <p style="font-size:0.85rem">Para novos clientes</p>
+                </div>
+            </div>
+        </div>
+        <section id="agendar">
+            <div class="booking-section">
+                <div class="booking-card">
+                    <h2 style="margin-bottom: 0.5rem;">✧ Garanta sua vaga ✧</h2>
+                    <p style="margin-bottom: 2rem;">Preencha os dados e confirme. Sua reserva será encaminhada com prioridade.</p>
+                    <form id="bookingForm">
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label><i class="far fa-user"></i> Seu nome completo</label>
+                                <input type="text" id="nome" placeholder="Marlon Aragão" required>
+                            </div>
+                            <div class="input-group">
+                                <label><i class="fas fa-paw"></i> Nome do pet</label>
+                                <input type="text" id="petName" placeholder="Butão" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label><i class="fab fa-whatsapp"></i> WhatsApp</label>
+                                <input type="tel" id="whatsapp" placeholder="(47) 98765-4321" required>
+                            </div>
+                            <div class="input-group">
+                                <label><i class="far fa-calendar-alt"></i> Data preferencial</label>
+                                  <input type="date" id="data" required>
+                            </div>
+                            <div class="input-group">
+                                <label><i class="far fa-clock"></i> Horário</label>
+                                <select id="horario" required>
+                                    <option value="">Selecionar</option>
+                                    <option>09:00</option>
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                    <option>14:00</option>
+                                    <option>15:30</option>
+                                    <option>17:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label><i class="fas fa-shopping-bag"></i> Serviço desejado</label>
+                                <select id="servico" required>
+                                    <option value="">Escolha uma opção</option>
+                                    <option>Banho & Tosa Completo</option>
+                                    <option>Consulta Veterinária</option>
+                                    <option>Day Care</option>
+                                    <option>Estética Premium</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-primary booking-btn"><i class="fas fa-calendar-check"></i> Confirmar agendamento</button>
+                        <div id="formFeedback" class="success-message">
+                            <i class="fas fa-check-circle"></i> Agendamento solicitado! Em breve nossa equipe confirmará via WhatsApp.
+                        </div>
+                    </form>
+                    <div style="margin-top: 24px; text-align: center; font-size: 0.8rem; color:#7B8A8E;">
+                        <i class="fas fa-shield-alt"></i> Dados seguros · Resposta em até 15 minutos
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2 style="text-align: center;">O que nossos clientes falam</h2>
+            <div class="section-subtitle" style="text-align: center; margin-bottom: 2rem;">Experiências reais com a Ruck Pet</div>
+            <div class="testimonial-grid">
+                <article class="testimonial-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Ambiente incrível, produtos naturais e atendimento muito amoroso. Minha gata amou o day care!</p>
+                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <strong>— Júlia M.</strong>
+                </article>
+                <article class="testimonial-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Agendei pelo site em menos de 1 minuto e recebi confirmação no WhatsApp. Muito prático e profissional.</p>
+                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <strong>— Lucas F.</strong>
+                </article>
+                <article class="testimonial-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p>O espaço seguro e limpo passa muita confiança. Meu cachorro saiu feliz e cheiroso. Super recomendo!</p>
+                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <strong>— Camila R.</strong>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo">Ruck.pet</div>
+                    <p style="margin-top: 12px; max-width: 260px;">Cuidado que ilumina, design que acolhe. O petshop do futuro, hoje.</p>
+                </div>
+                <div>
+                    <h4 style="color:white;">Contato</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Divinopolis, 1020 - Blumenau- SC</p>
+                    <p><i class="fas fa-phone-alt"></i> (47) 3562-9900</p>
+                    <div class="social-icons" style="margin-top: 16px;">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="color:white;">Horário de funcionamento</h4>
+                    <p>Seg-Sex: 9h - 19h</p>
+                    <p>Sáb: 9h - 16h</p>
+                    <p>Dom: emergências via WhatsApp</p>
+                </div>
+            </div>
+            <div style="border-top: 1px solid #2F3F44; margin-top: 48px; padding-top: 24px; text-align: center; font-size: 0.75rem;">
+                © 2026 Ruck Pet · Cuidado moderno para seu melhor amigo
+            </div>
+        </div>
+    </footer>
+
+</div>
+<script></script>
+    <script src="javascript.js"></script>
+</body>
+</html>
